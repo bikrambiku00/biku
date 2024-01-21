@@ -1,0 +1,118 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="survey-container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey form below:</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="number" id="number-label">Number:</label>
+      <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+
+      <label for="dropdown">Select an option:</label>
+      <select id="dropdown" required>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+
+      <label>Choose an option:</label>
+      <input type="radio" name="radio-group" value="option1" id="radio1" required>
+      <label for="radio1">Option 1</label>
+
+      <input type="radio" name="radio-group" value="option2" id="radio2" required>
+      <label for="radio2">Option 2</label>
+
+      <label>Choose multiple options:</label>
+      <input type="checkbox" name="checkbox-group" value="checkbox1" id="checkbox1">
+      <label for="checkbox1">Checkbox 1</label>
+
+      <input type="checkbox" name="checkbox-group" value="checkbox2" id="checkbox2">
+      <label for="checkbox2">Checkbox 2</label>
+
+      <label for="comments">Additional comments:</label>
+      <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #survey-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+** end of undefined **
+
